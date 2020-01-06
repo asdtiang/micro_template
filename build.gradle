@@ -1,6 +1,12 @@
 buildscript {
     repositories {
         mavenLocal()
+         maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
+        }
         mavenCentral()
         gradlePluginPortal()
         maven { url "https://repo.spring.io/plugins-release" }
@@ -183,6 +189,12 @@ configurations {
 
 repositories {
     mavenLocal()
+     maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
+        }
     mavenCentral()
     jcenter()
     //jhipster-needle-gradle-repositories - JHipster will add additional repositories
